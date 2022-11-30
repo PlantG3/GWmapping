@@ -1,0 +1,3 @@
+#!/bin/bash
+module load Java
+/bulk/hecheng/software/gwas/tassel5/run_pipeline.pl -Xmx20g -fork1 -h /homes/yangfanh/project/CMN/GWAS/WGS_maize269/3_genotypes/mis30_maf5/chr10.genome269.mis30.maf5.sort.hmp.txt -fork2 -r set282_12reps_estdpi13_tas.txt -fork3 -q /homes/yangfanh/project/CMN/GWAS/WGS_maize269/4_PCA_kins/tassel_pca/pca_tas_fi.txt -fork4 -k /homes/yangfanh/project/CMN/GWAS/WGS_maize269/4_PCA_kins/tassel_pca/kins.tas.fi.txt -combine5 -input1 -input2 -input3 -intersect -combine6 -input5 -input4 -mlm -mlmVarCompEst P3D -mlmCompressionLevel None -mlmOutputFile tassel_est_0705_chr10.txt -runfork1 -runfork2 -runfork3 -runfork4
